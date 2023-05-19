@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  proyectos-micro-backend:
+    container_name: proyectos-micro-backend
+    image: proyectos-micro-backend:v1
+    build:
+      context: .
+    ports:
+      - "4002:4002"
+    networks:
+      - asesorias-app
+networks:
+  asesorias-app:
